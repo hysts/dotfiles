@@ -33,6 +33,12 @@ do
 done
 
 
+# setup global gitignore
+src_dir=~/dotfiles/git
+dst_dir=~/.config/git
+mkdir -p ${dst_dir}
+ln -sfnv ${src_dir}/ignore  ${dst_dir}/ignore
+
 # setup ipython startup scripts
 src_dir=~/dotfiles/.ipython/profile_default/startup
 dst_dir=~/.ipython/profile_default/startup

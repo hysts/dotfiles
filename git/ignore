@@ -1,0 +1,10 @@
+.ipynb_checkpoints
+*.py[cod]
+
+__pycache__
+
+build/
+*.so
+
+.idea/
+
