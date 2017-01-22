@@ -36,3 +36,7 @@
 [url "git@gist.github.com:"]
     pushInsteadOf = "gist:"
     pushInsteadOf = "https://gist.github.com/"
+
+[url "git@bitbucket.com:"]
+    insteadOf = "bb:"
+    insteadOf = "https://bitbucket.com/"
