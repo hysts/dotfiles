@@ -1,0 +1,38 @@
+[include]
+    path = ~/.secrets/.gitconfig
+
+[diff]
+    tool = vimdiff
+
+[merge]
+    tool = meldmerge
+    ff = false
+
+[mergetool "meldmerge"]
+    cmd = meld $LOCAL $MERGED $REMOTE --auto-merge
+
+[pull]
+    ff = only
+
+[push]
+    default = simple
+
+[filter "lfs"]
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+
+[url "git://github.com/"]
+    insteadOf = "github:"
+    insteadOf = "https://github.com/"
+
+[url "git@github.com:"]
+    pushInsteadOf = "github:"
+    pushInsteadOf = "https://github.com/"
+
+[url "https://gist.github.com/"]
+    insteadOf = "gist:"
+
+[url "git@gist.github.com:"]
+    pushInsteadOf = "gist:"
+    pushInsteadOf = "https://gist.github.com/"

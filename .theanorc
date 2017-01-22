@@ -1,0 +1,16 @@
+[global]
+device = gpu
+floatX = float32
+openmp = True
+
+[gcc]
+
+[blas]
+
+[cuda]
+root = /usr/local/cuda
+
+[nvcc]
+fastmath = True
+optimizer_including = cudnn
+
