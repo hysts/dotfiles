@@ -1,6 +1,6 @@
 ﻿colorscheme molokai
 
-" GUI window size position
+" GUI window size
 set columns=100
 set lines=35
 
