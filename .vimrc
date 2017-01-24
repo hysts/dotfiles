@@ -32,6 +32,7 @@ NeoBundle 'Shougo/vimfiler'
 
 " colorscheme
 NeoBundle 'tomasr/molokai'
+NeoBundle 'w0ng/vim-hybrid'
 
 " indent guide
 NeoBundle 'nathanaelkane/vim-indent-guides'
@@ -65,6 +66,8 @@ NeoBundle 'lazywei/vim-matlab'
 
 " syntax highlight for Processing
 NeoBundleLazy 'sophacles/vim-processing'
+" syntax highlight for TypeScript
+NeoBundle 'leafgarland/typescript-vim'
 
 call neobundle#end()
 
@@ -74,6 +77,14 @@ filetype plugin indent on
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+colorscheme molokai
+set background=dark
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -99,6 +110,8 @@ let g:syntastic_cpp_compiler_options='-std=c++11'
 if filereadable("~/.secrets/.vimrc")
     source ~/.secrets/.vimrc
 endif
+
+let g:quickrun_config={'*': {'hook/time/enable': '1'},}
 
 " neocomplete
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -213,13 +226,17 @@ au BufRead,BufNewFile *.m set filetype=matlab
 
 " ROS
 au BufRead,BufNewFile *.launch set filetype=xml
-au BufRead,BufNewFile *.sdf set filetype=xml
-au BufRead,BufNewFile *.world set filetype=xml
+au BufRead,BufNewFile *.sdf    set filetype=xml
+au BufRead,BufNewFile *.world  set filetype=xml
+
+# Arduino
+au BufRead,BufNewFile *.ino set filetype=cpp
 
 " encoding
 set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
+set fileencodings=utf-8
 set fileformat=unix
 
 " use OS clipboard
@@ -244,6 +261,7 @@ set smartindent
 set smarttab
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4
 set expandtab
 set shiftround
 
@@ -293,6 +311,7 @@ set laststatus=2
 set statusline=%<%f\ %m\ %r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=\ (%v,%l)/%L%8P\ 
 
 " etc
+set title
 set hidden
 set switchbuf=useopen
 set mouse=a
