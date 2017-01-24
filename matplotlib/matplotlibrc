@@ -35,7 +35,7 @@
 # You can also deploy your own backend outside of matplotlib by
 # referring to the module name (which must be in the PYTHONPATH) as
 # 'module://my_backend'.
-backend      : agg
+backend      : qt4agg
 
 # If you are using the Qt4Agg backend, you can choose here
 # to use the PyQt4 bindings or the newer PySide bindings to
@@ -193,7 +193,7 @@ backend      : agg
 # The font.size property is the default font size for text, given in pts.
 # 10 pt is the standard value.
 #
-#font.family         : sans-serif
+font.family         : IPAexGothic
 #font.style          : normal
 #font.variant        : normal
 #font.weight         : medium
