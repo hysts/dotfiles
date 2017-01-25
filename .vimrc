@@ -229,7 +229,7 @@ au BufRead,BufNewFile *.launch set filetype=xml
 au BufRead,BufNewFile *.sdf    set filetype=xml
 au BufRead,BufNewFile *.world  set filetype=xml
 
-# Arduino
+" Arduino
 au BufRead,BufNewFile *.ino set filetype=cpp
 
 " encoding
