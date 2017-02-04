@@ -20,3 +20,4 @@ logging.basicConfig(
 
 logging.getLogger('PIL').setLevel(logging.WARNING)
 logging.getLogger('requests').setLevel(logging.WARNING)
+logging.getLogger('gensim').setLevel(logging.WARNING)
