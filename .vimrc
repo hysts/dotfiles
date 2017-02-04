@@ -107,8 +107,9 @@ let g:syntastic_cpp_compiler='g++'
 let g:syntastic_cpp_compiler_options='-std=c++11'
 "let g:syntastic_cpp_include_dirs=['/usr/local/include']
 
-if filereadable("~/.secrets/.vimrc")
-    source ~/.secrets/.vimrc
+let extra_config=$HOME."/.secrets/.vimrc"
+if filereadable(extra_config)
+    exec "source ".extra_config
 endif
 
 let g:quickrun_config={'*': {'hook/time/enable': '1'},}
