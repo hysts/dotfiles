@@ -30,6 +30,12 @@ define([
                     // add more button here if needed.
                 ]);
 
+                // Hide header
+                //Jupyter.toolbar.actions.call('jupyter-notebook:toggle-header')
+
+                // Hide toolbar
+                //Jupyter.toolbar.actions.call('jupyter-notebook:toggle-toolbar')
+
             }
         );
     }
