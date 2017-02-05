@@ -141,18 +141,6 @@ alias duf='du -sh *'
 alias ff='find . -type f -name'
 alias fd='find . -type d -name'
 
-# terminator
-alias term='terminator -l tile'
-# gnome-system-monitor
-alias sysm='gnome-system-monitor'
-# Chrome
-alias chrome='google-chrome'
-
-# docker ps -a
-alias dps='docker ps -a'
-# docker images
-alias di='docker images'
-
 # open images with eog
 alias -s {jpg,png,bmp,tiff,gif,jpeg,JPG,JPEG,PNG,BMP}=eog
 # open videos with vlc
@@ -177,6 +165,20 @@ function show_archive()
     esac
 }
 alias -s {tar,tar.gz,tgz,zip,rar,gz,7z}=show_archive
+
+
+# docker ps -a
+alias dps='docker ps -a'
+# docker images
+alias di='docker images'
+
+
+# terminator
+alias term='terminator -l tile'
+# gnome-system-monitor
+alias sysm='gnome-system-monitor'
+# Chrome
+alias chrome='google-chrome'
 
 
 ##################################################
