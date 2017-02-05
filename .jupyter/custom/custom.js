@@ -7,6 +7,9 @@ define([
             function () {
                 // Show line numbers in cells
                 Jupyter.Cell.options_default.cm_config.lineNumbers = true;
+
+                // Wrap line
+                Jupyter.Cell.options_default.cm_config.lineWrapping = true;
             }
         );
     }
