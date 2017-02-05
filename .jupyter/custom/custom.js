@@ -2,11 +2,13 @@ define([
     'base/js/namespace',
     'base/js/events'
     ],
-    function(IPython, events) {
+    function(Jupyter, events) {
         events.on("app_initialized.NotebookApp",
             function () {
-                IPython.Cell.options_default.cm_config.lineNumbers = true;
+                // Show line numbers in cells
+                Jupyter.Cell.options_default.cm_config.lineNumbers = true;
             }
         );
     }
 );
+
