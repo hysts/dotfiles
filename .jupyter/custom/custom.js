@@ -10,6 +10,26 @@ define([
 
                 // Wrap line
                 Jupyter.Cell.options_default.cm_config.lineWrapping = true;
+
+                // Add Buttons
+                Jupyter.toolbar.add_buttons_group([
+                    {
+                        'label'   : 'Restart & Run All',
+                        'icon'    : 'fa-refresh',
+                        'callback': function () {
+                            Jupyter.toolbar.actions.call('jupyter-notebook:confirm-restart-kernel-and-run-all-cells')
+                        }
+                    },
+                    {
+                        'label'   : 'Restart & Clear Output',
+                        'icon'    : 'fa-eraser',
+                        'callback': function () {
+                            Jupyter.toolbar.actions.call('jupyter-notebook:confirm-restart-kernel-and-clear-output')
+                        }
+                    },
+                    // add more button here if needed.
+                ]);
+
             }
         );
     }
