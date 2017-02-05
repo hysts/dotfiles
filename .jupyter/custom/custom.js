@@ -4,7 +4,7 @@ require([
     ],
     function() {
         // Select to the end of line
-        CodeMirror.Vim.map("v", "$h", "visual");
+        CodeMirror.Vim.map("v", "$", "visual");
         // Map jj to <Esc>
         CodeMirror.Vim.map("jj", "<Esc>", "insert");
         // Swap j/k and gj/gk (Note that <Plug> mappings)
