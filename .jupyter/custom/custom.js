@@ -1,15 +1,16 @@
 define([
     'base/js/namespace',
-    'base/js/events'
+    'base/js/events',
+    'notebook/js/cell'
     ],
-    function(Jupyter, events) {
+    function(Jupyter, events, cell) {
         events.on("app_initialized.NotebookApp",
             function () {
                 // Show line numbers in cells
-                Jupyter.Cell.options_default.cm_config.lineNumbers = true;
+                cell.Cell.options_default.cm_config.lineNumbers = true;
 
                 // Wrap line
-                Jupyter.Cell.options_default.cm_config.lineWrapping = true;
+                cell.Cell.options_default.cm_config.lineWrapping = true;
 
                 // Add Buttons
                 Jupyter.toolbar.add_buttons_group([
