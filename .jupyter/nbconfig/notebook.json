@@ -5,6 +5,7 @@
     "jupyter-js-widgets/extension": true, 
     "toc2/main": true, 
     "nbextensions_configurator/config_menu/main": true, 
+    "qtconsole/qtconsole": true, 
     "codefolding/main": true, 
     "vim_binding/vim_binding": true, 
     "ruler/main": true, 
