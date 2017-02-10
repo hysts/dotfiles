@@ -314,6 +314,15 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${TORCS_DIR}/install/lib
 ##################################################
 
 
+# nautilus
+function open()
+{
+    local name=$1
+    if [ -d $name ]; then
+        nautilus $name
+    fi
+}
+
 # pandoc
 function md2html()
 {
