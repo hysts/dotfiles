@@ -167,6 +167,10 @@ function show_archive()
 alias -s {tar,tar.gz,tgz,zip,rar,gz,7z}=show_archive
 
 
+# nvidia-docker
+if nvidia-docker > /dev/null 2>&1; then
+    alias docker='nvidia-docker'
+fi
 # docker ps -a
 alias dps='docker ps -a'
 # docker images
@@ -340,6 +344,7 @@ function dor()
     shift 1
     docker run -it --rm \
     --env="DISPLAY=unix$DISPLAY" \
+    --env="QT_X11_NO_MITSHM=1" \
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
     --volume=datavol:/root \
     --workdir=/root \
