@@ -142,7 +142,7 @@ alias ff='find . -type f -name'
 alias fd='find . -type d -name'
 
 # open images with eog
-alias -s {jpg,png,bmp,tiff,gif,jpeg,JPG,JPEG,PNG,BMP}=eog
+alias -s {jpg,png,bmp,tiff,pgm,ppm,gif,jpeg,JPG,JPEG,PNG,BMP,PGM,PPM}=eog
 # open videos with vlc
 alias -s {mp4,avi,wmv,ogg,ogv,mov}=vlc
 # open html and pdf with chrome
