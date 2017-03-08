@@ -273,9 +273,6 @@ if [ -d "${TORCH_DIR}" ]; then
     #export LD_LIBRARY_PATH=$HOME/torch/install/lib:$LD_LIBRARY_PATH
 fi
 
-# TensorFlow
-export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.0.0-cp27-none-linux_x86_64.whl
-
 ## MXNet
 export MXNET_HOME=$HOME/mxnet
 export PYTHONPATH=$MXNET_HOME/python:$PYTHONPATH
