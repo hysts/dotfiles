@@ -249,7 +249,8 @@ export LD_LIBRARY_PATH=/opt/intel/mkl/lib/intel64:/opt/intel/lib/intel64_lin:$LD
 #export PATH=$HOME/libs/Qt5.7/Tools/QtCreator/bin:$PATH
 
 # OpenCV 2.4.13.2
-export LD_LIBRARY_PATH=$HOME/libs/opencv2.4.13.2/lib:$LD_LIBRARY_PATH
+export OpenCV2_DIR=$HOME/libs/opencv2.4.13.2
+export LD_LIBRARY_PATH=${OpenCV2_DIR}/lib:$LD_LIBRARY_PATH
 
 # OpenCV 3.2.0
 export OpenCV_DIR=$HOME/libs/opencv3.2.0
