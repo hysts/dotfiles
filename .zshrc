@@ -187,7 +187,7 @@ alias chrome='google-chrome'
 # jupyter notebook
 alias jnb='jupyter notebook'
 # jupyter qtconsole
-alias jq='jupyter qtconsole'
+alias jqt='jupyter qtconsole'
 
 
 ##################################################
