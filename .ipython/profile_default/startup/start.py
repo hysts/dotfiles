@@ -1,7 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-import cv2
+try:
+    import cv2
+except Exception as e:
+    pass
 
 import os
 import sys
