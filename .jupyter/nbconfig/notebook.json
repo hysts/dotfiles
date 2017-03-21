@@ -4,15 +4,16 @@
     "comment-uncomment/main": true, 
     "jupyter-js-widgets/extension": true, 
     "toc2/main": true, 
+    "snippets_menu/main": true, 
     "nbextensions_configurator/config_menu/main": true, 
     "qtconsole/qtconsole": true, 
     "codefolding/main": true, 
-    "code_prettify/code_prettify": true, 
     "vim_binding/vim_binding": true, 
     "runtools/main": true, 
     "ruler/main": true, 
     "scratchpad/main": true, 
     "code_prettify/autopep8": true, 
+    "code_prettify/code_prettify": true, 
     "contrib_nbextensions_help_item/main": true
   }
 }
