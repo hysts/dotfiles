@@ -235,6 +235,7 @@ compctl -K _pip_completion pip
 # CUDA 8.0, cuDNN v5.1
 export CUDA_ROOT=/usr/local/cuda
 export PATH=$CUDA_ROOT/bin:$PATH
+export LIBRARY_PATH=$CUDA_ROOT/lib64:$LIBRARY_PATH
 export LD_LIBRARY_PATH=$CUDA_ROOT/lib64:$LD_LIBRARY_PATH
 
 # Intel MKL
@@ -261,6 +262,13 @@ export PKG_CONFIG_PATH=${OpenCV_DIR}/lib/pkgconfig:$PKG_CONFIG_PATH
 export DLIB_DIR=$HOME/libs/dlib19.4
 export LD_LIBRARY_PATH=${DLIB_DIR}/lib:$LD_LIBRARY_PATH
 export DLIB_SHARE=${DLIB_DIR}/share
+
+# Theano
+libgpuarray_dir=$HOME/libs/libgpuarray_v0.6.2
+export CPATH=$libgpuarray_dir/include:$CPATH
+export LIBRARY_PATH=$libgpuarray_dir/lib:$LIBRARY_PATH
+export LD_LIBRARY_PATH=$libgpuarray_dir/lib:$LD_LIBRARY_PATH
+export PYTHONPATH=$PYTHONPATH:$libgpuarray_dir/lib/python2.7/site-packages
 
 # Caffe
 export CAFFE_ROOT=$HOME/caffe
