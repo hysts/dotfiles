@@ -1,5 +1,5 @@
 {
-    "image_dim_ordering": "th", 
+    "image_data_format": "channels_last", 
     "epsilon": 1e-07, 
     "floatx": "float32", 
     "backend": "theano"
