@@ -189,6 +189,9 @@ alias jnb='jupyter notebook'
 # jupyter qtconsole
 alias jqt='jupyter qtconsole'
 
+# apt upgrade
+alias aptupgrade='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y'
+
 
 ##################################################
 ##################################################
