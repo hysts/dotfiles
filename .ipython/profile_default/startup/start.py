@@ -5,6 +5,8 @@ try:
     import cv2
 except Exception as e:
     pass
+import skimage.io
+import skimage.color
 
 import os
 import sys
