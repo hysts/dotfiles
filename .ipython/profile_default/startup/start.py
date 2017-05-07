@@ -7,6 +7,7 @@ except Exception as e:
     pass
 import skimage.io
 import skimage.color
+import skimage.transform
 
 import os
 import sys
@@ -16,6 +17,7 @@ import shutil
 import re
 import codecs
 import datetime
+import time
 
 import logging
 
