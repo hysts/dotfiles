@@ -8,6 +8,8 @@ except Exception as e:
 import skimage.io
 import skimage.color
 import skimage.transform
+import skimage.data
+import skimage.feature
 
 import os
 import sys
