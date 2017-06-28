@@ -1,4 +1,9 @@
 {
+  "Cell": {
+    "cm_config": {
+      "lineNumbers": true
+    }
+  }, 
   "load_extensions": {
     "execute_time/ExecuteTime": false, 
     "comment-uncomment/main": true, 
@@ -8,12 +13,12 @@
     "nbextensions_configurator/config_menu/main": true, 
     "qtconsole/qtconsole": true, 
     "codefolding/main": true, 
+    "code_prettify/code_prettify": true, 
     "vim_binding/vim_binding": true, 
     "runtools/main": true, 
     "ruler/main": true, 
     "scratchpad/main": true, 
     "code_prettify/autopep8": true, 
-    "code_prettify/code_prettify": true, 
     "contrib_nbextensions_help_item/main": true
   }
 }
