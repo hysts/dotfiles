@@ -327,6 +327,13 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${TORCS_DIR}/install/lib
 ##################################################
 
 
+alias update_numpy='pip uninstall numpy; pip install -U --no-binary :all: numpy'
+alias update_scipy='pip uninstall scipy; pip install -U --no-binary :all: scipy'
+
+##################################################
+##################################################
+
+
 # nautilus
 function open()
 {
