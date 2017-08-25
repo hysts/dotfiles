@@ -257,7 +257,7 @@ export OpenCV2_DIR=$HOME/libs/opencv2.4.13.2
 export LD_LIBRARY_PATH=${OpenCV2_DIR}/lib:$LD_LIBRARY_PATH
 
 # OpenCV 3.2.0
-export OpenCV_DIR=$HOME/libs/opencv3.2.0
+export OpenCV_DIR=$HOME/libs/opencv3.3.0
 export LD_LIBRARY_PATH=${OpenCV_DIR}/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=${OpenCV_DIR}/lib/pkgconfig:$PKG_CONFIG_PATH
 
