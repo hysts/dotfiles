@@ -1,5 +1,9 @@
 import numpy as np
+import scipy.stats
 import matplotlib.pyplot as plt
+import matplotlib.colors
+import mpl_toolkits.mplot3d
+import mpl_toolkits.axes_grid1
 import pandas as pd
 try:
     import cv2
