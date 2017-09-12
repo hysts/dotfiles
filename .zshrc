@@ -256,13 +256,13 @@ export LD_LIBRARY_PATH=/opt/intel/mkl/lib/intel64:/opt/intel/lib/intel64_lin:$LD
 export OpenCV2_DIR=$HOME/libs/opencv2.4.13.2
 export LD_LIBRARY_PATH=${OpenCV2_DIR}/lib:$LD_LIBRARY_PATH
 
-# OpenCV 3.2.0
+# OpenCV 3.3.0
 export OpenCV_DIR=$HOME/libs/opencv3.3.0
 export LD_LIBRARY_PATH=${OpenCV_DIR}/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=${OpenCV_DIR}/lib/pkgconfig:$PKG_CONFIG_PATH
 
-# dlib 19.4
-export DLIB_DIR=$HOME/libs/dlib19.4
+# dlib 19.6
+export DLIB_DIR=$HOME/libs/dlib19.6
 export LD_LIBRARY_PATH=${DLIB_DIR}/lib:$LD_LIBRARY_PATH
 export DLIB_SHARE=${DLIB_DIR}/share
 
