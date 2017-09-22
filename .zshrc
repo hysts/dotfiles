@@ -231,10 +231,6 @@ compctl -K _pip_completion pip
 ##################################################
 
 
-# CUDA 7.0, cuDNN 6.5v2
-#export CUDA_ROOT=/usr/local/cuda-7.0
-# CUDA 7.5, cuDNN v5
-#export CUDA_ROOT=/usr/local/cuda-7.5
 # CUDA 8.0, cuDNN v5.1
 export CUDA_ROOT=/usr/local/cuda
 export PATH=$CUDA_ROOT/bin:$PATH
