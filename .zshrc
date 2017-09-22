@@ -317,7 +317,7 @@ export PATH=$PATH:$HOME/PyCharm/pycharm-community-2017.2.3/bin
 alias pycharm=pycharm.sh
 
 # TORCS
-export TORCS_DIR=$HOME/software/Torcs/torcs-1.3.7
+export TORCS_DIR=$HOME/softwares/Torcs/torcs-1.3.7
 export PATH=$PATH:${TORCS_DIR}/install/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${TORCS_DIR}/install/lib
 
