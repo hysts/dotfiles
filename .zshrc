@@ -294,6 +294,9 @@ if [ -d "${ROS_DIR}" ]; then
     export PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages/wx-2.8-gtk2-unicode
 fi
 
+# ViZDoom 1.1.3
+export PYTHONPATH=$PYTHONPATH:$HOME/libs/ViZDoom/bin/python2/pip_package
+
 
 ##################################################
 ##################################################
