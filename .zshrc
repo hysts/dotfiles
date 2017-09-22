@@ -310,7 +310,7 @@ export PATH=$PATH:$PYPKG_ROOT/imutils/bin:$PYPKG_ROOT/utils/bin
 
 
 # PyCharm
-export PATH=$PATH:$HOME/PyCharm/pycharm-community-2016.3.2/bin
+export PATH=$PATH:$HOME/PyCharm/pycharm-community-2017.2.3/bin
 alias pycharm=pycharm.sh
 
 # TORCS
