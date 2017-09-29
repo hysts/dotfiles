@@ -64,3 +64,10 @@ dst_dir=~/.config/matplotlib
 mkdir -p ${dst_dir}
 ln -sfnv ${src_dir}/matplotlibrc ${dst_dir}/matplotlibrc
 
+# setup pip config
+src_dir=~/dotfiles/
+dst_dir=~/.config/pip
+mkdir -p ${dst_dir}
+ln -sfnv ${src_dir}/pip.conf ${dst_dir}/pip.conf
+
+
