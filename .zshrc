@@ -262,13 +262,6 @@ export DLIB_DIR=$HOME/libs/dlib19.7
 export LD_LIBRARY_PATH=${DLIB_DIR}/lib:$LD_LIBRARY_PATH
 export DLIB_SHARE=${DLIB_DIR}/share
 
-# Theano
-libgpuarray_dir=$HOME/libs/libgpuarray_v0.6.2
-export CPATH=$libgpuarray_dir/include:$CPATH
-export LIBRARY_PATH=$libgpuarray_dir/lib:$LIBRARY_PATH
-export LD_LIBRARY_PATH=$libgpuarray_dir/lib:$LD_LIBRARY_PATH
-export PYTHONPATH=$PYTHONPATH:$libgpuarray_dir/lib/python2.7/site-packages
-
 # Caffe
 export CAFFE_ROOT=$HOME/caffe
 export PYTHONPATH=$CAFFE_ROOT/python:$PYTHONPATH
