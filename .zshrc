@@ -184,6 +184,8 @@ alias sysm='gnome-system-monitor'
 # Chrome
 alias chrome='google-chrome'
 
+# jupyter console
+alias jc='jupyter console'
 # jupyter notebook
 alias jnb='jupyter notebook'
 # jupyter qtconsole
