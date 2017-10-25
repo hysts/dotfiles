@@ -241,6 +241,7 @@ export LD_LIBRARY_PATH=$CUDA_ROOT/lib64:$LD_LIBRARY_PATH
 
 # Intel MKL
 export LD_LIBRARY_PATH=/opt/intel/mkl/lib/intel64:/opt/intel/lib/intel64_lin:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/opt/intel/ipp/lib/intel64:$LD_LIBRARY_PATH
 
 # Qt5.7
 #export Qt_DIR=$HOME/libs/Qt5.7/5.7/gcc_64
