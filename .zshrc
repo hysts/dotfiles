@@ -256,8 +256,8 @@ export LIBRARY_PATH=/opt/intel/mkl/lib/intel64:/opt/intel/ipp/lib/intel64:$LIBRA
 export OpenCV2_DIR=$HOME/libs/opencv2.4.13.2
 export LD_LIBRARY_PATH=${OpenCV2_DIR}/lib:$LD_LIBRARY_PATH
 
-# OpenCV 3.3.0
-export OpenCV_DIR=$HOME/libs/opencv3.3.0
+# OpenCV 3.3.1
+export OpenCV_DIR=$HOME/libs/opencv3.3.1
 export LD_LIBRARY_PATH=${OpenCV_DIR}/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=${OpenCV_DIR}/lib/pkgconfig:$PKG_CONFIG_PATH
 
