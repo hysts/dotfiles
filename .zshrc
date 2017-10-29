@@ -209,7 +209,7 @@ fi
 
 # pyenv virtualenvwrapper
 pyenv virtualenvwrapper > /dev/null 2>&1
-workon py2712 > /dev/null 2>&1
+workon py363 > /dev/null 2>&1
 
 
 ##################################################
