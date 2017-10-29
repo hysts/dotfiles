@@ -28,12 +28,12 @@ import time
 
 import logging
 
-logging.basicConfig(
-    format='[%(asctime)s %(name)s %(levelname)s] - %(message)s',
-    datefmt='%Y/%m/%d %H:%M:%S',
-    level=logging.DEBUG)
-
-logging.getLogger('PIL').setLevel(logging.WARNING)
-logging.getLogger('requests').setLevel(logging.WARNING)
-logging.getLogger('sklearn').setLevel(logging.WARNING)
-logging.getLogger('gensim').setLevel(logging.WARNING)
+#logging.basicConfig(
+#    format='[%(asctime)s %(name)s %(levelname)s] - %(message)s',
+#    datefmt='%Y/%m/%d %H:%M:%S',
+#    level=logging.DEBUG)
+#
+#logging.getLogger('PIL').setLevel(logging.WARNING)
+#logging.getLogger('requests').setLevel(logging.WARNING)
+#logging.getLogger('sklearn').setLevel(logging.WARNING)
+#logging.getLogger('gensim').setLevel(logging.WARNING)
