@@ -15,6 +15,7 @@ import skimage.color
 import skimage.transform
 import skimage.data
 import skimage.feature
+import PIL.Image
 
 import os
 import sys
@@ -25,6 +26,8 @@ import re
 import codecs
 import datetime
 import time
+
+import json
 
 import logging
 
