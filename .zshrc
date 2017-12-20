@@ -263,8 +263,8 @@ export OpenCV_DIR=$HOME/libs/opencv3.3.1
 export LD_LIBRARY_PATH=${OpenCV_DIR}/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=${OpenCV_DIR}/lib/pkgconfig:$PKG_CONFIG_PATH
 
-# dlib 19.7
-export DLIB_DIR=$HOME/libs/dlib19.7
+# dlib 19.8
+export DLIB_DIR=$HOME/libs/dlib19.8
 export LD_LIBRARY_PATH=${DLIB_DIR}/lib:$LD_LIBRARY_PATH
 export DLIB_SHARE=${DLIB_DIR}/share
 
