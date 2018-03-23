@@ -212,7 +212,7 @@ fi
 
 # pyenv virtualenvwrapper
 pyenv virtualenvwrapper > /dev/null 2>&1
-workon py363 > /dev/null 2>&1
+workon py364 > /dev/null 2>&1
 
 
 ##################################################
@@ -257,17 +257,13 @@ export LIBRARY_PATH=$MKL_ROOT_DIR/lib/intel64:$IPP_ROOT_DIR/lib/intel64:$LIBRARY
 ## QtCreator
 #export PATH=$HOME/libs/Qt5.7/Tools/QtCreator/bin:$PATH
 
-# OpenCV 2.4.13.2
-export OpenCV2_DIR=$HOME/libs/opencv2.4.13.2
-export LD_LIBRARY_PATH=${OpenCV2_DIR}/lib:$LD_LIBRARY_PATH
-
-# OpenCV 3.3.1
-export OpenCV_DIR=$HOME/libs/opencv3.3.1
+# OpenCV 3.4.1
+export OpenCV_DIR=$HOME/libs/opencv3.4.1
 export LD_LIBRARY_PATH=${OpenCV_DIR}/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=${OpenCV_DIR}/lib/pkgconfig:$PKG_CONFIG_PATH
 
-# dlib 19.9
-export DLIB_DIR=$HOME/libs/dlib19.9
+# dlib 19.10
+export DLIB_DIR=$HOME/libs/dlib19.10
 export LD_LIBRARY_PATH=${DLIB_DIR}/lib:$LD_LIBRARY_PATH
 export DLIB_SHARE=${DLIB_DIR}/share
 
@@ -283,10 +279,6 @@ if [ -d "${TORCH_DIR}" ]; then
     #export LD_LIBRARY_PATH=$HOME/torch/install/lib:$LD_LIBRARY_PATH
 fi
 
-## MXNet
-export MXNET_HOME=$HOME/mxnet
-export PYTHONPATH=$MXNET_HOME/python:$PYTHONPATH
-
 # ROS
 export ROS_DIR=/opt/ros/indigo
 if [ -d "${ROS_DIR}" ]; then
@@ -298,16 +290,6 @@ fi
 
 # ViZDoom 1.1.3
 export PYTHONPATH=$PYTHONPATH:$HOME/libs/ViZDoom/bin/python2/pip_package
-
-
-##################################################
-##################################################
-
-
-# Python packages
-export PYPKG_ROOT=$HOME/libs/pypkgs
-export PYTHONPATH=$PYPKG_ROOT/imutils:$PYPKG_ROOT/utils:$PYTHONPATH
-export PATH=$PATH:$PYPKG_ROOT/imutils/bin:$PYPKG_ROOT/utils/bin
 
 
 ##################################################
