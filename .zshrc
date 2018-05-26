@@ -202,6 +202,20 @@ alias aptupgrade='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get
 ##################################################
 
 
+function peco-select-history() {
+    BUFFER="$(\history -n 1 | awk '!a[$0]++' | peco --query "$LBUFFER" | sed 's/\\n/\n/')"
+    CURSOR=$#BUFFER
+    zle -R -c
+}
+
+zle -N peco-select-history
+bindkey '^R' peco-select-history
+
+
+##################################################
+##################################################
+
+
 # pyenv
 export PYTHON_CONFIGURE_OPTS='--enable-shared --enable-unicode=ucs4'
 export PYENV_ROOT=$HOME/.pyenv
