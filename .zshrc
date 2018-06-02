@@ -203,7 +203,7 @@ alias aptupgrade='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get
 
 
 function peco-select-history() {
-    BUFFER="$(\history -n 1 | awk '!a[$0]++' | peco --query "$LBUFFER" | sed 's/\\n/\n/')"
+    BUFFER="$(\history -nr 1 | awk '!a[$0]++' | peco --query "$LBUFFER" | sed 's/\\n/\n/')"
     CURSOR=$#BUFFER
     zle -R -c
 }
