@@ -91,6 +91,7 @@ source $ZSH/oh-my-zsh.sh
 export HISTFILE=~/.zsh_history
 export HISTSIZE=10000
 export SAVEHIST=1000000
+setopt share_history
 
 export LD_LIBRARY_PATH=/usr/local/lib:/usr/lib
 
