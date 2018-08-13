@@ -26,6 +26,7 @@ cd ~/dotfiles
 for dotfile in .??*
 do
     [ $dotfile = ".git" ] && continue
+    [ $dotfile = '.ssh' ] && continue
     [ $dotfile = '.gitignore' ] && continue
     [ $dotfile = '.jupyter' ] && continue
     [ $dotfile = '.ipython' ] && continue
@@ -40,10 +41,10 @@ mkdir -p ${dst_dir}
 ln -sfnv ${src_dir}/ignore  ${dst_dir}/ignore
 
 # needed for fixing ssh agent when tmux is detached
-src_dir=~/dotfiles
+src_dir=~/dotfiles/.ssh
 dst_dir=~/.ssh
 mkdir -p ${dst_dir}
-ln -sfnv ${src_dir}/ssh_rc ${dst_dir}/rc
+ln -sfnv ${src_dir}/rc ${dst_dir}/rc
 
 # setup ipython startup scripts
 src_dir=~/dotfiles/.ipython/profile_default/startup
