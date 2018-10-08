@@ -18,6 +18,7 @@ import skimage.feature
 import PIL.Image
 
 import os
+import pathlib
 import sys
 import subprocess
 import shutil
