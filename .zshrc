@@ -48,6 +48,7 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(
     git
     zsh-syntax-highlighting
+    #zsh-completions
 )
 
 # User configuration
@@ -103,6 +104,8 @@ bindkey -v
 
 # suppress ssh related error messages
 export NO_AT_BRIDGE=1
+
+ssh-add -A 2>/dev/null
 
 
 ##################################################
