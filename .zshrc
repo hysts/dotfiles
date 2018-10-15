@@ -275,15 +275,17 @@ export LIBRARY_PATH=$MKL_ROOT_DIR/lib/intel64:$IPP_ROOT_DIR/lib/intel64:$LIBRARY
 ## QtCreator
 #export PATH=$HOME/libs/Qt5.7/Tools/QtCreator/bin:$PATH
 
-# OpenCV 3.4.1
-export OpenCV_DIR=$HOME/libs/opencv3.4.1
+# OpenCV 3.4.3
+export OpenCV_DIR=$HOME/libs/opencv3.4.3
 export LD_LIBRARY_PATH=${OpenCV_DIR}/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=${OpenCV_DIR}/lib/pkgconfig:$PKG_CONFIG_PATH
+export CMAKE_PREFIX_PATH=${OpenCV_DIR}/share/OpenCV
 
-# dlib 19.12
-export DLIB_DIR=$HOME/libs/dlib19.12
+# dlib 19.16
+export DLIB_DIR=$HOME/libs/dlib19.16
 export LD_LIBRARY_PATH=${DLIB_DIR}/lib:$LD_LIBRARY_PATH
 export DLIB_SHARE=${DLIB_DIR}/share
+export CMAKE_PREFIX_PATH=${DLIB_DIR}/lib/cmake/dlib
 
 # Caffe
 export CAFFE_ROOT=$HOME/caffe
