@@ -30,10 +30,10 @@
     insteadOf = "b:"
     insteadOf = "https://bitbucket.com/"
 
-[url "git@github.com:hysts"]
+[url "git@github.com:hysts/"]
     insteadOf = "gg:"
 
-[url "git@bitbucket.com:hysts"]
+[url "git@bitbucket.com:hysts/"]
     insteadOf = "bb:"
 
 [url "git@gist.github.com:"]
