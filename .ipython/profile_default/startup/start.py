@@ -6,6 +6,7 @@ import matplotlib.cm
 import mpl_toolkits.mplot3d
 import mpl_toolkits.axes_grid1
 import pandas as pd
+import tqdm
 try:
     import cv2
 except Exception as e:
