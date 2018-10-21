@@ -394,4 +394,4 @@ function chmod_recurs()
 ##################################################
 ##################################################
 
-
+alias fixtmuxssh='export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock'
