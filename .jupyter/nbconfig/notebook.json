@@ -5,7 +5,7 @@
     }
   },
   "load_extensions": {
-    "execute_time/ExecuteTime": false,
+    "execute_time/ExecuteTime": true,
     "comment-uncomment/main": true,
     "jupyter-js-widgets/extension": true,
     "toc2/main": true,
@@ -17,8 +17,8 @@
     "vim_binding/vim_binding": true,
     "runtools/main": true,
     "ruler/main": true,
-    "scratchpad/main": true,
-    "code_prettify/autopep8": true,
+    "scratchpad/main": false,
+    "code_prettify/autopep8": false,
     "contrib_nbextensions_help_item/main": true
   }
 }
