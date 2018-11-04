@@ -230,7 +230,7 @@ fi
 
 # pyenv virtualenvwrapper
 pyenv virtualenvwrapper > /dev/null 2>&1
-workon py370 > /dev/null 2>&1
+workon py371 > /dev/null 2>&1
 
 
 ##################################################
