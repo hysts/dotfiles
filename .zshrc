@@ -275,8 +275,8 @@ export LIBRARY_PATH=$MKL_ROOT_DIR/lib/intel64:$IPP_ROOT_DIR/lib/intel64:$LIBRARY
 ## QtCreator
 #export PATH=$HOME/libs/Qt5.7/Tools/QtCreator/bin:$PATH
 
-# OpenCV 3.4.3
-export OpenCV_DIR=$HOME/libs/opencv3.4.3
+# OpenCV
+export OpenCV_DIR=$HOME/libs/opencv4.1.2
 export LD_LIBRARY_PATH=${OpenCV_DIR}/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=${OpenCV_DIR}/lib/pkgconfig:$PKG_CONFIG_PATH
 export CMAKE_PREFIX_PATH=${OpenCV_DIR}/share/OpenCV
