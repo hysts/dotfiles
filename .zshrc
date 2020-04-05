@@ -216,7 +216,14 @@ fi
 
 # pyenv virtualenvwrapper
 pyenv virtualenvwrapper > /dev/null 2>&1
-workon py375 > /dev/null 2>&1
+workon py382 > /dev/null 2>&1
+
+
+##################################################
+##################################################
+
+
+export TORCH_HOME=$HOME/.torch
 
 
 ##################################################
