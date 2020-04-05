@@ -174,32 +174,18 @@ function show_archive()
 alias -s {tar,tar.gz,tgz,zip,rar,gz,7z}=show_archive
 
 
-# nvidia-docker
-if nvidia-docker > /dev/null 2>&1; then
-    alias docker='nvidia-docker'
-fi
 # docker ps -a
 alias dps='docker ps -a'
 # docker images
 alias di='docker images'
 
-
-# terminator
-alias term='terminator -l tile'
-# gnome-system-monitor
-alias sysm='gnome-system-monitor'
-# Chrome
-alias chrome='google-chrome'
-
-# jupyter console
+# jupyter
 alias jc='jupyter console'
-# jupyter notebook
 alias jnb='jupyter notebook'
-# jupyter qtconsole
 alias jqt='jupyter qtconsole'
 
 # apt upgrade
-alias aptupgrade='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y'
+alias aptupgrade='sudo apt update && sudo apt upgrade -y'
 
 
 ##################################################
@@ -253,7 +239,6 @@ compctl -K _pip_completion pip
 ##################################################
 ##################################################
 
-
 # CUDA, cuDNN
 export CUDA_ROOT=/usr/local/cuda
 export PATH=$CUDA_ROOT/bin:$PATH
@@ -267,14 +252,6 @@ export LD_LIBRARY_PATH=$MKL_ROOT_DIR/lib/intel64:/opt/intel/lib/intel64_lin:$LD_
 export LD_LIBRARY_PATH=$IPP_ROOT_DIR/lib/intel64:$LD_LIBRARY_PATH
 export LIBRARY_PATH=$MKL_ROOT_DIR/lib/intel64:$IPP_ROOT_DIR/lib/intel64:$LIBRARY_PATH
 
-# Qt5.7
-#export Qt_DIR=$HOME/libs/Qt5.7/5.7/gcc_64
-#export PATH=${Qt_DIR}/bin:$PATH
-#export LD_LIBRARY_PATH=${Qt_DIR}/lib:$LD_LIBRARY_PATH
-#export PKG_CONFIG_PATH=${Qt_DIR}/lib/pkgconfig:$PKG_CONFIG_PATH
-## QtCreator
-#export PATH=$HOME/libs/Qt5.7/Tools/QtCreator/bin:$PATH
-
 # OpenCV
 export OpenCV_DIR=$HOME/libs/opencv4.1.2
 export LD_LIBRARY_PATH=${OpenCV_DIR}/lib:$LD_LIBRARY_PATH
@@ -287,44 +264,6 @@ export LD_LIBRARY_PATH=${DLIB_DIR}/lib:$LD_LIBRARY_PATH
 export DLIB_SHARE=${DLIB_DIR}/share
 export CMAKE_PREFIX_PATH=${DLIB_DIR}/lib/cmake/dlib
 
-# Caffe
-export CAFFE_ROOT=$HOME/caffe
-export PYTHONPATH=$CAFFE_ROOT/python:$PYTHONPATH
-
-# Torch
-export TORCH_DIR=$HOME/torch
-if [ -d "${TORCH_DIR}" ]; then
-    . ${TORCH_DIR}/install/bin/torch-activate
-    #export PATH=$HOME/torch/install/bin:$PATH
-    #export LD_LIBRARY_PATH=$HOME/torch/install/lib:$LD_LIBRARY_PATH
-fi
-
-# ROS
-export ROS_DIR=/opt/ros/indigo
-if [ -d "${ROS_DIR}" ]; then
-    source /opt/ros/indigo/setup.zsh
-    source /usr/share/gazebo/setup.sh
-    export GAZEBO_MODEL_PATH=$HOME/.gazebo/additional_models:$GAZEBO_MODEL_PATH
-    export PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages/wx-2.8-gtk2-unicode
-fi
-
-# ViZDoom 1.1.3
-export PYTHONPATH=$PYTHONPATH:$HOME/libs/ViZDoom/bin/python2/pip_package
-
-
-##################################################
-##################################################
-
-
-# PyCharm
-export PATH=$PATH:$HOME/PyCharm/pycharm-community-2017.2.3/bin
-alias pycharm=pycharm.sh
-
-# TORCS
-export TORCS_DIR=$HOME/softwares/Torcs/torcs-1.3.7
-export PATH=$PATH:${TORCS_DIR}/install/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${TORCS_DIR}/install/lib
-
 
 ##################################################
 ##################################################
@@ -336,16 +275,6 @@ alias upgrade_scipy='pip uninstall scipy; pip install -U --no-binary :all: scipy
 
 ##################################################
 ##################################################
-
-
-# nautilus
-function open()
-{
-    local name=$1
-    if [ -d $name ]; then
-        nautilus $name
-    fi
-}
 
 # pandoc
 function md2html()

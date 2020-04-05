@@ -36,8 +36,9 @@
 [url "git@bitbucket.com:hysts/"]
     insteadOf = "bb:"
 
-[url "https://gist.github.com/"]
+[url "git@gist.github.com:"]
     insteadOf = "gist:"
+    insteadOf = "https://gist.github.com/hysts/"
 
 
 [user]
