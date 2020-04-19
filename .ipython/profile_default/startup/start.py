@@ -24,6 +24,8 @@ import sys
 import subprocess
 import shutil
 
+import multiprocessing
+
 import re
 import codecs
 import datetime

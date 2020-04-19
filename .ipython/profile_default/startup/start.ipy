@@ -2,4 +2,5 @@
 %autoreload 2
 %matplotlib inline
 import ipywidgets
+import tqdm.notebook
 
