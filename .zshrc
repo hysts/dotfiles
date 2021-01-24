@@ -158,6 +158,7 @@ alias -s {html,pdf}='google-chrome --incognito'
 # global alias
 alias -g @g='| grep'
 alias -g @l='| less'
+alias -g @j='| jq -C . @l'
 alias -g NUL="> /dev/null 2>&1"
 
 # show archive contents
@@ -217,6 +218,8 @@ fi
 # pyenv virtualenvwrapper
 pyenv virtualenvwrapper > /dev/null 2>&1
 workon py382 > /dev/null 2>&1
+
+export PYTHONPATH=$VIRTUALENVWRAPPER_HOOK_DIR/py382/lib/python3.8/site-packages/cv2/python-3.8:$PYTHONPATH
 
 
 ##################################################
