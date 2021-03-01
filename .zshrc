@@ -59,7 +59,7 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -133,13 +133,40 @@ fi
 ##################################################
 
 
+case ${OSTYPE} in
+    darwin*)
+        alias ls='ls --color'
+        alias ls='ls --color=auto'
+        # coreutils
+        export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+        export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
+        # gnu-sed
+        export PATH=/usr/local/opt/gnu-sed/libexec/gnubin:$PATH
+        export MANPATH=/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH
+        # xhost
+        export IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
+        export PATH=$PATH:/usr/X11/bin
+
+        alias fixaudio="sudo kill `ps -ax | grep 'coreaudiod' | grep 'sbin' | awk '{print $1}'`"
+        ;;
+
+    linux*)
+        alias free='free -h'
+        alias aptupgrade='sudo apt update && sudo apt upgrade -y'
+        ;;
+esac
+
+##################################################
+##################################################
+
+
+
 alias grep='grep --color=auto -E --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias sgrep='grep -EIUrn'
 
 alias ll='ls -lAhFcrt'
 
 alias df='df -h'
-alias free='free -h'
 alias du='du -h'
 
 alias dud='du -h -d 1'
@@ -181,9 +208,6 @@ alias di='docker images'
 # jupyter
 alias jc='jupyter console'
 alias jnb='jupyter notebook'
-
-# apt upgrade
-alias aptupgrade='sudo apt update && sudo apt upgrade -y'
 
 
 ##################################################
