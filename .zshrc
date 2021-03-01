@@ -164,6 +164,7 @@ alias grep='grep --color=auto -E --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias sgrep='grep -EIUrn'
 
 alias ll='ls -lAhFcrt'
+alias history='history -i'
 
 alias df='df -h'
 alias du='du -h'
