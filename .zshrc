@@ -237,8 +237,8 @@ fi
 # pyenv virtualenvwrapper
 pyenv virtualenvwrapper > /dev/null 2>&1
 workon py382 > /dev/null 2>&1
-
-export PYTHONPATH=$VIRTUALENVWRAPPER_HOOK_DIR/py382/lib/python3.8/site-packages/cv2/python-3.8:$PYTHONPATH
+source ${VIRTUAL_ENV}/bin/aws_zsh_completer.sh
+export PYTHONPATH=${VIRTUAL_ENV}/lib/python3.8/site-packages/cv2/python-3.8:$PYTHONPATH
 
 
 ##################################################
