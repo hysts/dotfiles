@@ -105,7 +105,7 @@ bindkey -v
 # suppress ssh related error messages
 export NO_AT_BRIDGE=1
 
-ssh-add -A 2>/dev/null
+ssh-add -A 2> /dev/null
 
 
 ##################################################
@@ -175,15 +175,13 @@ function show_archive()
 alias -s {tar,tar.gz,tgz,zip,rar,gz,7z}=show_archive
 
 
-# docker ps -a
+# docker
 alias dps='docker ps -a'
-# docker images
 alias di='docker images'
 
 # jupyter
 alias jc='jupyter console'
 alias jnb='jupyter notebook'
-alias jqt='jupyter qtconsole'
 
 # apt upgrade
 alias aptupgrade='sudo apt update && sudo apt upgrade -y'
@@ -198,7 +196,6 @@ function peco-select-history() {
     CURSOR=$#BUFFER
     zle -R -c
 }
-
 zle -N peco-select-history
 bindkey '^R' peco-select-history
 
