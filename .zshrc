@@ -208,6 +208,8 @@ alias di='docker images'
 alias jc='jupyter console'
 alias jnb='jupyter notebook'
 
+export LESS='-MR'
+
 
 ##################################################
 ##################################################
