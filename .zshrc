@@ -174,7 +174,6 @@ function show_archive()
 }
 alias -s {tar,tar.gz,tgz,zip,rar,gz,7z}=show_archive
 
-
 # docker
 alias dps='docker ps -a'
 alias di='docker images'
