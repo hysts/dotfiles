@@ -160,7 +160,6 @@ esac
 ##################################################
 
 
-
 alias grep='grep --color=auto -E --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias sgrep='grep -EIUrn'
 
@@ -306,6 +305,7 @@ alias upgrade_scipy='pip uninstall scipy; pip install -U --no-binary :all: scipy
 ##################################################
 ##################################################
 
+
 # pandoc
 function md2html()
 {
@@ -353,4 +353,7 @@ function chmod_recurs()
 ##################################################
 ##################################################
 
+
 alias fixtmuxssh='export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock'
+
+
