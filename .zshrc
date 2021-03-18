@@ -209,6 +209,11 @@ alias di='docker images'
 alias jc='jupyter console'
 alias jnb='jupyter notebook'
 
+alias b='bat --paging=always'
+alias e='exa -algh --header --time-style=long-iso --color auto --color-scale --icons --git'
+alias ee='e -s modified'
+alias t='e --tree'
+
 export LESS='-MR'
 
 
@@ -239,9 +244,9 @@ fi
 
 # pyenv virtualenvwrapper
 pyenv virtualenvwrapper > /dev/null 2>&1
-workon py382 > /dev/null 2>&1
+workon py392 > /dev/null 2>&1
 source ${VIRTUAL_ENV}/bin/aws_zsh_completer.sh
-export PYTHONPATH=${VIRTUAL_ENV}/lib/python3.8/site-packages/cv2/python-3.8:$PYTHONPATH
+export PYTHONPATH=${VIRTUAL_ENV}/lib/python3.9/site-packages/cv2/python-3.9:$PYTHONPATH
 
 
 ##################################################
@@ -285,7 +290,7 @@ export LD_LIBRARY_PATH=$IPP_ROOT_DIR/lib/intel64:$LD_LIBRARY_PATH
 export LIBRARY_PATH=$MKL_ROOT_DIR/lib/intel64:$IPP_ROOT_DIR/lib/intel64:$LIBRARY_PATH
 
 # OpenCV
-export OpenCV_DIR=$HOME/libs/opencv4.1.2
+export OpenCV_DIR=$HOME/libs/opencv4.5.1
 export LD_LIBRARY_PATH=${OpenCV_DIR}/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=${OpenCV_DIR}/lib/pkgconfig:$PKG_CONFIG_PATH
 export CMAKE_PREFIX_PATH=${OpenCV_DIR}/share/OpenCV
