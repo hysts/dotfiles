@@ -163,7 +163,7 @@ esac
 alias grep='grep --color=auto -E --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias sgrep='grep -EIUrn'
 
-alias ll='ls -lAhFcrt'
+#alias ll='ls -lAhFcrt'
 alias history='history -i'
 
 alias df='df -h'
@@ -210,9 +210,9 @@ alias jc='jupyter console'
 alias jnb='jupyter notebook'
 
 alias b='bat --paging=always'
-alias e='exa -algh --header --time-style=long-iso --color auto --color-scale --icons --git'
-alias ee='e -s modified'
-alias t='e --tree'
+alias l='exa -algh --header --time-style=long-iso --color auto --color-scale --icons --git'
+alias ll='l -s modified'
+alias t='l --tree'
 
 export LESS='-MR'
 
