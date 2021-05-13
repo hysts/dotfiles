@@ -240,7 +240,7 @@ export PYTHON_CONFIGURE_OPTS='--enable-shared --enable-unicode=ucs4'
 export PYENV_ROOT=$HOME/.pyenv
 if [ -d "${PYENV_ROOT}" ]; then
     export PATH=$PYENV_ROOT/bin:$PATH
-    eval "$(pyenv init -)"
+    eval "$(pyenv init --path)"
 fi
 
 # pyenv virtualenvwrapper
