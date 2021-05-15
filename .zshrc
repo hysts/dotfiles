@@ -48,6 +48,8 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(
     git
     zsh-syntax-highlighting
+    docker
+    docker-compose
     #zsh-completions
 )
 
