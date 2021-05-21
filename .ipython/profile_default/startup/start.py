@@ -36,8 +36,11 @@ except Exception as e:
     pass
 import fvcore
 import h5py
+import matplotlib
+import matplotlib.animation
 import matplotlib.cm
 import matplotlib.colors
+import matplotlib.gridspec
 import matplotlib.pyplot as plt
 import mpl_toolkits.axes_grid1
 import mpl_toolkits.mplot3d

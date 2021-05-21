@@ -8,4 +8,4 @@
 
 import ipywidgets
 import tqdm.notebook
-
+from IPython.display import HTML, Audio, Video
